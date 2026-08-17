@@ -133,6 +133,29 @@
       color:var(--ink);
     }
 
+    .signature a{
+      color:inherit;
+      text-decoration:none;
+      display:inline-block;
+      transition:color .2s ease;
+    }
+
+    .signature-role{
+      display:block;
+      font-weight:500;
+      color:var(--muted);
+      transition:color .2s ease;
+    }
+
+    .signature a:hover,
+    .signature a:focus-visible,
+    .signature a:hover .signature-role,
+    .signature a:focus-visible .signature-role{
+      color:var(--gold);
+    }
+
+    .signature a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
     .cta{
       background:var(--ink);
       color:#fff;
@@ -357,8 +380,10 @@
             <p>A <strong>SOLLAR</strong> é a realização do meu sonho de unir minha trajetória profissional à minha paixão por criar espaços inspiradores, representando diversas indústrias em meu portfólio.</p>
 
             <div class="signature">
-              Jacqueline Teixeira<br>
-              <span style="font-weight:500;color:var(--muted)">Fundadora da Sollar Representações</span>
+              <a href="https://www.linkedin.com/in/jacqueline-teixeira-ab3a4911/" target="_blank" rel="noopener" aria-label="Abrir LinkedIn de Jacqueline Teixeira">
+                <span>Jacqueline Teixeira</span>
+                <span class="signature-role">Fundadora da Sollar Representações</span>
+              </a>
             </div>
           </div>
         </div>
