@@ -26,3 +26,4 @@ Estes arquivos são usados apenas nos cards de catálogo da Sollar Representaç�
 | DM Toys | `dm-toys.png` | https://dmtoys.com.br/wp-content/uploads/2017/06/logo-2.png |
 | DM Radical | `dm-radical.png` | https://dmtoys.com.br/wp-content/uploads/2017/08/DMR.png |
 | Brinquemix | `brinquemix.png` | https://brinquemix.com.br/assets/img/logo1.png |
+| Bang Toys | `bang-toys.png` | Logo fornecida pela Sollar; catálogo oficial: https://drive.google.com/file/d/1cmwXsFgAU_L9bxK_lQLfZHa1Z3_Gbw_K/view |
