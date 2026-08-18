@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/casinha.png?v=3" type="image/png">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
-    :root{--ink:#2f342e;--pine:#d9a847;--pine-soft:#f3e4bb;--pine-wash:#fbf6e9;--gold-dark:#7a5814;--leaf:#2f342e;--sun:#f8eed8;--cream:#f7efde;--paper:#fffdf8;--line:#ded3c1;--muted:#625c50;--shadow:0 18px 48px rgba(64,50,24,.13);--brand-size:2.2em;--nav-size:1rem;--intro-column-width:315px;--intro-heading-width:550px;--intro-copy-gap:315px}
+    :root{--ink:#2f342e;--pine:#d9a847;--pine-soft:#f3e4bb;--pine-wash:#fbf6e9;--gold-dark:#7a5814;--leaf:#2f342e;--sun:#f8eed8;--cream:#f7efde;--paper:#fffdf8;--line:#ded3c1;--muted:#625c50;--shadow:0 18px 48px rgba(64,50,24,.13);--brand-size:2.2em;--nav-size:1rem;--intro-column-width:315px;--intro-heading-width:550px;--intro-copy-gap:335px;--intro-copy-x:0px;--intro-copy-y:18px;--intro-line-x:-28px;--intro-line-y:2px;--intro-line-height:58px}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.5}.shell{max-width:1180px;margin:auto;padding:0 28px}.top{background:var(--pine);color:#fff}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{
   color:#fff;
   text-decoration:none;
@@ -64,6 +64,21 @@
   max-width: 650px;
   margin: 0;
   align-self: center;
+
+  /* Ajuste fino da posição SOMENTE no desktop */
+  position:relative;
+  left:var(--intro-copy-x);
+  top:var(--intro-copy-y);
+}
+
+.intro p::before{
+  content:'';
+  position:absolute;
+  left:var(--intro-line-x);
+  top:var(--intro-line-y);
+  width:1px;
+  height:var(--intro-line-height);
+  background:rgba(122,88,20,.28);
 }.catalog{padding:30px 0 100px}.catalog-head{display:flex;align-items:end;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line);padding-bottom:25px;margin-bottom:26px}.catalog-head h2{margin:0;font:700 clamp(2rem,3vw,3.2rem)/1 'Playfair Display',Georgia,serif}.catalog-head p{margin:0;color:var(--muted);max-width:390px}.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.brand-card{background:var(--paper);border:1px solid var(--line);padding:24px 22px 19px;min-height:178px;display:flex;flex-direction:column;justify-content:space-between;transition:.22s;position:relative;overflow:hidden;isolation:isolate}.brand-card:hover{border-color:var(--leaf);box-shadow:var(--shadow);transform:translateY(-3px)}.brand-card h3,.brand-card p,.brand-card a{position:relative;z-index:2}.brand-card h3{font:600 1.33rem/1.13 'Playfair Display',Georgia,serif;margin:0}.brand-card p{font-size:.87rem;color:var(--muted);margin:8px 0 auto}.brand-card a{margin-top:20px;color:var(--leaf);text-decoration:none;font-size:.85rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 
 /* Imagem do catálogo:
@@ -213,6 +228,15 @@
     margin:0;
     font-size:1rem;
     line-height:1.7;
+
+    /* No celular, ignora os deslocamentos do desktop */
+    position:static;
+    left:auto;
+    top:auto;
+  }
+
+  .intro p::before{
+    content:none;
   }
 
   .catalog{
