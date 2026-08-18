@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Conheça a história de Jacqueline Teixeira, fundadora da Sollar Representações.">
   <title>Sollar</title>
-  <link rel="icon" href="assets/casinha.png?v=3" type="casinha.png">
+  <link rel="icon" href="assets/casinha.png?v=3" type="image/png">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700&display=swap');
 
@@ -16,7 +16,7 @@
       --paper:#fffdf8;
       --muted:#625c50;
       --line:#ded3c1;
-    }
+    ;--brand-size:2.2em;--nav-size:1rem}
 
     *{box-sizing:border-box}
 
@@ -48,22 +48,43 @@
     }
 
     .brand{
-      color:#fff;
-      text-decoration:none;
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:700;
-      letter-spacing:.02em;
-      white-space:nowrap;
-    }
+  color:#fff;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  white-space:nowrap;
+}
 
-    .brand-logo{
-      width:42px;
-      height:43px;
-      object-fit:contain;
-      display:block;
-    }
+.brand span{
+  display:inline-block;
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:var(--brand-size);
+  font-weight:700;
+  line-height:1;
+  letter-spacing:-.025em;
+  transform:translateY(-1px);
+  position:relative;
+  padding-bottom:4px;
+}
+
+.brand span::after{
+  content:'';
+  position:absolute;
+  left:1px;
+  bottom:0;
+  width:22px;
+  height:1px;
+  background:rgba(255,255,255,.72);
+  transition:width .2s ease,opacity .2s ease;
+}
+
+.brand:hover span::after,
+.brand:focus-visible span::after{
+  width:100%;
+  opacity:1;
+}
+
+    
 
     .navlinks{
       display:flex;
@@ -74,7 +95,7 @@
     .navlinks a{
       color:#fff;
       text-decoration:none;
-      font-size:.88rem;
+      font-size:var(--nav-size);
       font-weight:600;
       padding:8px 0;
       position:relative;
@@ -230,16 +251,11 @@
         gap:12px;
       }
 
-      .brand{
-        gap:9px;
-        font-size:.78rem;
-        line-height:1.2;
-      }
+      .brand span{
+    font-size:calc(var(--brand-size) * .90);
+  }
 
-      .brand-logo{
-        width:42px;
-        height:42px;
-      }
+      
 
       .navlinks{
         width:100%;
@@ -255,7 +271,7 @@
       .navlinks a{
         display:block;
         color:#fff;
-        font-size:.70rem;
+        font-size:calc(var(--nav-size) * .80);
         line-height:1.2;
         padding:5px 0 6px;
         text-align:center;
@@ -330,21 +346,18 @@
         padding-right:22px;
       }
 
-      .brand{
-        font-size:.73rem;
-      }
+      .brand span{
+    font-size:calc(var(--brand-size) * .84);
+  }
 
-      .brand-logo{
-        width:39px;
-        height:39px;
-      }
+      
 
       .navlinks{
         gap:10px;
       }
 
       .navlinks a{
-        font-size:.64rem;
+        font-size:calc(var(--nav-size) * .72);
       }
 
       .hero{
@@ -370,8 +383,7 @@
   <header class="top">
     <div class="shell nav">
       <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/sollar-home.svg?v=3" alt="Ícone de casinha da Sollar">
-        <span>SOLLAR REPRESENTAÇÕES</span>
+        <span>Sollar</span>
       </a>
 
       <nav class="navlinks" aria-label="Navegação">
