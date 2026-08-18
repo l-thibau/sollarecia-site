@@ -12,84 +12,132 @@
     height:53px;object-fit:contain;display:block}.navlinks{display:flex;align-items:center;gap:28px}
 .navlinks a{color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;padding:8px 0;position:relative}
 .navlinks a::after{content:'';position:absolute;left:0;bottom:2px;width:0;height:1px;background:#fff;transition:width .2s ease}
-.navlinks a:hover::after,.navlinks a:focus-visible::after{width:100%}.hero{background:linear-gradient(135deg,var(--pine-wash) 0%,var(--pine-soft) 100%);color:var(--ink);overflow:hidden;position:relative}.hero:before{content:'';position:absolute;width:680px;height:680px;border:1px solid rgba(122,88,20,.16);border-radius:50%;right:-260px;top:-390px}.hero-grid{min-height:515px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:60px;position:relative}.eyebrow{color:var(--gold-dark);font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}.hero h1{font:700 clamp(3rem,6vw,5.75rem)/.98 'Playfair Display',Georgia,serif;margin:0;max-width:680px;letter-spacing:-.045em}.hero h1 em{color:var(--gold-dark);font-weight:600}.hero p{font-size:1.12rem;color:#4f514b;max-width:510px;margin:24px 0 34px}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;border-radius:3px;padding:14px 20px;min-height:48px;transition:.2s}.primary{background:var(--pine);color:#1d3029}.primary:hover{background:#c79736;transform:translateY(-2px)}.secondary{border:1px solid rgba(47,52,46,.28);color:var(--ink)}.secondary:hover{border-color:var(--ink);background:rgba(255,255,255,.42)}.hero-note{border-left:1px solid rgba(122,88,20,.28);padding:22px 0 22px 25px;align-self:center}.hero-note strong{display:block;font:600 2.1rem/1 'Playfair Display',Georgia,serif;color:var(--gold-dark);margin-bottom:8px}.hero-note span{display:block;color:#55564f;max-width:215px}.intro{padding:88px 0 50px;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.section-kicker{color:var(--leaf);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}.intro h2,.contact h2{font:700 clamp(2.3rem,4vw,4rem)/1.04 'Playfair Display',Georgia,serif;letter-spacing:-.035em;margin:13px 0 0}.intro p{font-size:1.12rem;color:#49554f;margin:35px 0 0;max-width:650px}.catalog{padding:30px 0 100px}.catalog-head{display:flex;align-items:end;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line);padding-bottom:25px;margin-bottom:26px}.catalog-head h2{margin:0;font:700 clamp(2rem,3vw,3.2rem)/1 'Playfair Display',Georgia,serif}.catalog-head p{margin:0;color:var(--muted);max-width:390px}.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.brand-card{background:var(--paper);border:1px solid var(--line);padding:24px 22px 19px;min-height:178px;display:flex;flex-direction:column;justify-content:space-between;transition:.22s;position:relative;overflow:hidden;isolation:isolate}.brand-card:hover{border-color:var(--leaf);box-shadow:var(--shadow);transform:translateY(-3px)}.brand-card h3,.brand-card p,.brand-card a{position:relative;z-index:2}.brand-card h3{font:600 1.33rem/1.13 'Playfair Display',Georgia,serif;margin:0}.brand-card p{font-size:.87rem;color:var(--muted);margin:8px 0 auto}.brand-card a{margin-top:20px;color:var(--leaf);text-decoration:none;font-size:.85rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.navlinks a:hover::after,.navlinks a:focus-visible::after{width:100%}.hero{background:linear-gradient(135deg,var(--pine-wash) 0%,var(--pine-soft) 100%);color:var(--ink);overflow:hidden;position:relative}.hero:before{content:'';position:absolute;width:680px;height:680px;border:1px solid rgba(122,88,20,.16);border-radius:50%;right:-260px;top:-390px}.hero-grid{min-height:515px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:60px;position:relative}.eyebrow{color:var(--gold-dark);font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}.hero h1{font:700 clamp(3rem,6vw,5.75rem)/.98 'Playfair Display',Georgia,serif;margin:0;max-width:680px;letter-spacing:-.045em}.hero h1 em{color:var(--gold-dark);font-weight:600}.hero p{font-size:1.12rem;color:#4f514b;max-width:510px;margin:24px 0 34px}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;border-radius:3px;padding:14px 20px;min-height:48px;transition:.2s}.primary{background:var(--pine);color:#1d3029}.primary:hover{background:#c79736;transform:translateY(-2px)}.secondary{border:1px solid rgba(47,52,46,.28);color:var(--ink)}.secondary:hover{border-color:var(--ink);background:rgba(255,255,255,.42)}.hero-note{border-left:1px solid rgba(122,88,20,.28);padding:22px 0 22px 25px;align-self:center}.hero-note strong{display:block;font:600 2.1rem/1 'Playfair Display',Georgia,serif;color:var(--gold-dark);margin-bottom:8px}.hero-note span{display:block;color:#55564f;max-width:215px}.intro{padding:88px 0 50px;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.section-kicker{color:var(--leaf);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}.intro h2,.contact h2{font:700 clamp(2.3rem,4vw,4rem)/1.04 'Playfair Display',Georgia,serif;letter-spacing:-.035em;margin:13px 0 0}.intro p{font-size:1.12rem;color:#49554f;margin:35px 0 0;max-width:650px}.catalog{padding:30px 0 100px}.catalog-head{display:flex;align-items:end;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line);padding-bottom:25px;margin-bottom:26px}.catalog-head h2{margin:0;font:700 clamp(2rem,3vw,3.2rem)/1 'Playfair Display',Georgia,serif}.catalog-head p{margin:0;color:var(--muted);max-width:390px}.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.brand-card{background:var(--paper);border:1px solid var(--line);padding:24px 22px 19px;min-height:178px;display:flex;flex-direction:column;justify-content:space-between;transition:.22s;position:relative;overflow:hidden;isolation:isolate}.brand-card:hover{border-color:var(--leaf);box-shadow:var(--shadow);transform:translateY(-3px)}.brand-card h3,.brand-card p,.brand-card a{position:relative;z-index:2}.brand-card h3{font:600 1.33rem/1.13 'Playfair Display',Georgia,serif;margin:0}.brand-card p{font-size:.87rem;color:var(--muted);margin:8px 0 auto}.brand-card a{text-decoration:none}
 
-/* Logo da marca:
-   o próprio link desenha a imagem, portanto a área visual é realmente clicável.
-   Mantém o efeito opaco e o fade lateral. */
+/* Nome da empresa: link discreto para o site oficial */
+.brand-name-link{
+  color:var(--ink);
+  font:inherit;
+  letter-spacing:inherit;
+  text-transform:none;
+  margin:0;
+  display:inline-block;
+  transition:color .18s ease,transform .18s ease;
+}
+.brand-name-link:hover,
+.brand-name-link:focus-visible{
+  color:var(--gold-dark);
+  transform:translateY(-1px);
+}
+
+/* Botão de catálogo: cápsula minimalista e coerente com a paleta */
+.catalog-link{
+  align-self:flex-start;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  width:max-content;
+  margin-top:20px;
+  padding:7px 11px 7px 12px;
+  border:1px solid rgba(122,88,20,.28);
+  border-radius:999px;
+  background:rgba(217,168,71,.055);
+  color:var(--gold-dark);
+  font-size:.74rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  transition:background .18s ease,border-color .18s ease,color .18s ease,transform .18s ease;
+}
+.catalog-link::after{
+  content:'↗';
+  font-size:.82rem;
+  line-height:1;
+  transition:transform .18s ease;
+}
+.catalog-link:hover,
+.catalog-link:focus-visible{
+  background:rgba(217,168,71,.16);
+  border-color:rgba(122,88,20,.5);
+  color:#684a10;
+  transform:translateY(-1px);
+}
+.catalog-link:hover::after,
+.catalog-link:focus-visible::after{
+  transform:translate(1px,-1px);
+}
+
+/* Imagem do catálogo:
+   - só começa a aparecer após 70% da largura do card
+   - 25% de nitidez normalmente
+   - 80% ao passar o mouse */
 .brand-card.catalog-visual::before{
-  content:none;
-}
-
-.brand-card.catalog-visual h3,
-.brand-card.catalog-visual p,
-.brand-card.catalog-visual > a:not(.brand-logo-link){
-  max-width:64%;
-}
-
-/* A logo visível É o link para o site oficial. */
-.brand-logo-link{
-  position:absolute !important;
-  top:0;
-  right:0;
-  bottom:0;
-  width:52%;
-  z-index:1 !important;
-  display:block;
-  margin:0 !important;
-  max-width:none !important;
-  padding:0 !important;
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:0;
   background-image:var(--catalog-image);
   background-repeat:no-repeat;
   background-position:right center;
-  background-size:100% auto;
+  background-size:52% auto;
+
   opacity:.25;
-  cursor:pointer;
-  color:transparent !important;
-  font-size:0 !important;
-  letter-spacing:0 !important;
-  text-transform:none !important;
+
   -webkit-mask-image:linear-gradient(
     to right,
     transparent 0%,
-    transparent 19.2%,
+    transparent 58%,
     #000 100%
   );
   mask-image:linear-gradient(
     to right,
     transparent 0%,
-    transparent 19.2%,
+    transparent 58%,
     #000 100%
   );
-  transition:opacity .22s ease,background-size .22s ease;
+
+  transition:opacity .28s ease, background-size .28s ease;
+  pointer-events:none;
 }
 
-/* Texto e links de catálogo ficam acima da área da logo quando se sobrepõem. */
-.brand-card h3,
-.brand-card p,
-.brand-card > a:not(.brand-logo-link),
-.brand-card > span{
-  position:relative;
-  z-index:2;
-}
-
-/* Só a logo reage quando o mouse está sobre ela. */
-.brand-logo-link:hover,
-.brand-logo-link:focus-visible{
+.brand-card.catalog-visual:hover::before{
   opacity:.80;
-  background-size:108% auto;
+  background-size:56% auto;
 }
 
-.brand-logo-link::after{
-  content:none !important;
+.brand-card.catalog-visual h3,
+.brand-card.catalog-visual p,
+.brand-card.catalog-visual > .catalog-link{
+  max-width:64%;
 }
 
-.brand-logo-link:focus-visible{
-  outline:3px solid var(--gold-dark);
-  outline-offset:-4px;
+/* A área visual do logo funciona como atalho para o site oficial da marca. */
+.brand-logo-link{
+  position:absolute !important;
+  top:0;
+  right:0;
+  bottom:0;
+  width:44%;
+  z-index:10 !important;
+  display:block !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:transparent !important;
+  background:transparent !important;
+  font-size:0 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  border-radius:0;
+  cursor:pointer;
+  pointer-events:auto;
 }
+.brand-logo-link::after{content:none !important}
+.brand-logo-link:focus-visible{outline:3px solid var(--gold-dark);outline-offset:-4px}
 
-.brand-card a:after{content:' ↗';color:var(--sun)}.contact{background:#e7efe7;padding:86px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.contact p{font-size:1.08rem;color:#4e5d55;max-width:540px}.contact-box{background:var(--paper);padding:30px;box-shadow:var(--shadow);border-top:5px solid var(--sun)}.contact-box a{color:var(--ink);text-decoration:none;display:block;font-size:1.04rem;font-weight:700;padding:13px 0;border-bottom:1px solid var(--line)}.contact-box a:last-child{border:0}.contact-box small{display:block;color:var(--muted);font-size:.78rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}footer{background:#173a32;color:#d6e1dc;padding:25px 0;font-size:.84rem}footer .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:var(--sun);text-decoration:none}
+/* Links de catálogo permanecem acima da zona clicável da logo */
+.brand-card > a:not(.brand-logo-link){z-index:12}
+.contact{background:#e7efe7;padding:86px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.contact p{font-size:1.08rem;color:#4e5d55;max-width:540px}.contact-box{background:var(--paper);padding:30px;box-shadow:var(--shadow);border-top:5px solid var(--sun)}.contact-box a{color:var(--ink);text-decoration:none;display:block;font-size:1.04rem;font-weight:700;padding:13px 0;border-bottom:1px solid var(--line)}.contact-box a:last-child{border:0}.contact-box small{display:block;color:var(--muted);font-size:.78rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}footer{background:#173a32;color:#d6e1dc;padding:25px 0;font-size:.84rem}footer .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:var(--sun);text-decoration:none}
 @media(max-width:760px){
   .shell{
     padding-left:24px;
@@ -226,20 +274,18 @@
     min-height:0;
     padding:24px;
   }
-  .brand-logo-link{
-    width:58%;
-    background-size:100% auto;
+
+  .brand-card.catalog-visual::before{
+    background-size:58% auto;
   }
 
-  .brand-logo-link:hover,
-  .brand-logo-link:focus-visible{
-    background-size:107% auto;
+  .brand-card.catalog-visual:hover::before{
+    background-size:62% auto;
   }
-
 
   .brand-card.catalog-visual h3,
   .brand-card.catalog-visual p,
-  .brand-card.catalog-visual > a:not(.brand-logo-link){
+  .brand-card.catalog-visual > .catalog-link{
     max-width:68%;
   }
 
@@ -300,29 +346,29 @@
   <header class="top"><div class="shell nav"><a class="brand" href="index.html"><img class="brand-logo" src="assets/sollar-home.svg?v=3" alt="Ícone de casinha da Sollar"><span>SOLLAR REPRESENTAÇÕES</span></a><nav class="navlinks" aria-label="Navegação"><a href="catalogos.html">Marcas representadas</a><a href="historia.html">Conheça a História</a><a href="index.html#contato">Contato</a></nav></div></header>
   <main>
     <section class="shell catalog" id="marcas"><div class="catalog-head"><div><div class="section-kicker">Marcas representadas</div><h2>Explore os catálogos</h2></div></div><div class="catalog-grid">
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/arthi.svg')"><h3>Arthi</h3><a class="brand-logo-link"
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/arthi.svg')"><h3><a class="brand-name-link" href="https://www.arthi.com.br/" target="_blank" rel="noopener">Arthi</a></h3><a class="brand-logo-link"
    href="https://www.arthi.com.br/"
    target="_blank"
    rel="noopener"
-   aria-label="Abrir site oficial da Arthi"></a><p>Utilidades domésticas para cozinha, banheiro e organização.</p><a href="https://drive.google.com/file/d/1Go5vvbzxcw9ol8r0--ahcaDUe0EwyuSU/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/dasplast.svg')"><h3>Dasplast</h3><a class="brand-logo-link" href="https://www.dasplast.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Dasplast"></a><p>Utilidades plásticas para a rotina da casa.</p><a href="https://drive.google.com/file/d/1OWqvfeQrAtqdBXKK5U8dp5KlJd977X-b/view?usp=sharing" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/bandeirante.png')"><h3>Bandeirantes</h3><a class="brand-logo-link" href="https://indbandeirante.com/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Bandeirantes"></a><p>Potes plásticos e squeezes decorados para o dia a dia.</p><a href="https://drive.google.com/file/d/1nm8sEXB-63aECQbVyPDTFesfeuQq_vUK/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/sao-bernardo.png')"><h3>São Bernardo</h3><a class="brand-logo-link" href="https://www.saobernardo.ind.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da São Bernardo"></a><p>Utilidades plásticas para o dia a dia.</p><a href="https://drive.google.com/file/d/1Px3jkW7bpCLTIDHYgl-DvLWfRtb6WcD8/view?usp=sharing" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/botafogo.png')"><h3>Botafogo</h3><a class="brand-logo-link" href="https://botafogo.ind.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Botafogo"></a><p>Soluções para cuidados, limpeza e casa.</p><a href="https://drive.google.com/file/d/1XAtDpUJkMx_HtiM9NDVPRjsVt9GHEzy6/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/secalux.svg')"><h3>Secalux</h3><a class="brand-logo-link" href="https://www.secalux.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Secalux"></a><p>Varais e soluções para lavanderia.</p><a href="https://drive.google.com/file/d/1ZqPJjtBQ9Z3lt6KmexxmRDwMmWacUCQa/view?usp=sharing" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/acomix.png')"><h3>Açomix</h3><a class="brand-logo-link" href="https://acomix.net/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Açomix"></a><p>Panelas e utensílios para a cozinha.</p><a href="https://drive.google.com/file/d/1rzR8vILepUS9L1l_Rvd15QfnN-kRcK7r/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/powermaid.webp')"><h3>Camesa — Powermaid</h3><a class="brand-logo-link" href="https://powermaid.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Camesa — Powermaid"></a><p>Itens práticos para limpeza doméstica.</p><a href="https://drive.google.com/file/d/1Lh4-XFtMZ7JqRdtQdfa512ypPRITH0JT/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/oliveira.png')"><h3>Alumínio Oliveira</h3><a class="brand-logo-link" href="https://oliveiraindustria.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Alumínio Oliveira"></a><p>Soluções práticas para limpeza e organização.</p><a href="https://drive.google.com/file/d/1M_G7mGqHoOXaQf9slImK1rkQxolpNAc/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/taumer.png')"><h3>Taumer</h3><a class="brand-logo-link" href="https://taumer.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Taumer"></a><p>Talheres, aramados e utilidades para cozinha e casa.</p><a href="https://drive.google.com/file/d/15O_QRSptQmdLo5eHgmsTeuI2TCghFO7b/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/ruvolo.png')"><h3>Ruvolo</h3><a class="brand-logo-link" href="https://ruvolo.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Ruvolo"></a><p>Itens funcionais para casa e cozinha.</p><a href="https://drive.google.com/file/d/1Aftbvdn1fVPkyVjTT5vVfsFY_GsAku0m/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/globimport.png')"><h3>Globimport</h3><a class="brand-logo-link" href="https://globimport.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Globimport"></a><p>Produtos para cozinha, mesa e casa.</p><a href="https://drive.google.com/file/d/1olk19oEiKNsvJ33RQijtTL1U6R2S95Ge/view?usp=sharing" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/alleanza.svg')"><h3>Alleanza</h3><a class="brand-logo-link" href="https://alleanzaceramica.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Alleanza"></a><p>Louças e cerâmicas para mesa posta.</p><a href="https://alleanzaceramica.com.br/catalogos" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/porcelanas-lu.jpg')"><h3>Porcelanas Lu</h3><a class="brand-logo-link" href="https://porcelanaslu.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Porcelanas Lu"></a><p>Porcelanas e itens para mesa posta.</p><a href="https://drive.google.com/file/d/1R52RAAYdpS6HfKTinRsMNbIwbuMZEaiP/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/espelhos-leao.jpg')"><h3>Espelhos Leão</h3><a class="brand-logo-link" href="https://espelhosleao.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Espelhos Leão"></a><p>Espelhos e vidros transformados para o lar.</p><a href="https://drive.google.com/file/d/1iOr85y1ddaYg9NBRwExL6RPVOudTYqNB/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/dm-toys.png')"><h3>DM Brasil</h3><a class="brand-logo-link" href="https://dmtoys.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da DM Brasil"></a><p>Brinquedos para diferentes fases da infância e linhas de movimento.</p><a href="https://drive.google.com/file/d/1FEIdxW5PQU_2OJm8aKodEJN4OEQGeRsk/view?usp=drive_link" target="_blank" rel="noopener">Catálogo DM Toys</a><a href="https://drive.google.com/file/d/15p7ReTXVSOia-No9DworuSIoNaVoEO9Y/view?usp=drive_link" target="_blank" rel="noopener">Catálogo DM Radical</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/brinquemix.png')"><h3>Brinquemix</h3><a class="brand-logo-link" href="https://brinquemix.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Brinquemix"></a><p>Brinquedos e itens para brincar.</p><a href="https://drive.google.com/file/d/14ysBQH_QLqKz5NWO_UwsHZdlBNBL4I3T/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/bang-toys.png')"><h3>Bang Toys</h3><a class="brand-logo-link" href="https://www.bangtoys.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Bang Toys"></a><p>Veículos elétricos infantis, brinquedos e mobilidade para brincar.</p><a href="https://drive.google.com/file/d/1cmwXsFgAU_L9bxK_lQLfZHa1Z3_Gbw_K/view?usp=drive_link" target="_blank" rel="noopener">Abrir catálogo 2026</a></article>
-      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/prozent.jpg')"><h3>Prozent</h3><a class="brand-logo-link" href="https://prozent.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Prozent"></a><p>Indústria parceira representada pela Sollar.</p><span>Catálogo em atualização</span></article>
+   aria-label="Abrir site oficial da Arthi"></a><p>Utilidades domésticas para cozinha, banheiro e organização.</p><a class="catalog-link" href="https://drive.google.com/file/d/1Go5vvbzxcw9ol8r0--ahcaDUe0EwyuSU/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/dasplast.svg')"><h3><a class="brand-name-link" href="https://www.dasplast.com.br/" target="_blank" rel="noopener">Dasplast</a></h3><a class="brand-logo-link" href="https://www.dasplast.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Dasplast"></a><p>Utilidades plásticas para a rotina da casa.</p><a class="catalog-link" href="https://drive.google.com/file/d/1OWqvfeQrAtqdBXKK5U8dp5KlJd977X-b/view?usp=sharing" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/bandeirante.png')"><h3><a class="brand-name-link" href="https://indbandeirante.com/" target="_blank" rel="noopener">Bandeirantes</a></h3><a class="brand-logo-link" href="https://indbandeirante.com/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Bandeirantes"></a><p>Potes plásticos e squeezes decorados para o dia a dia.</p><a class="catalog-link" href="https://drive.google.com/file/d/1nm8sEXB-63aECQbVyPDTFesfeuQq_vUK/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/sao-bernardo.png')"><h3><a class="brand-name-link" href="https://www.saobernardo.ind.br/" target="_blank" rel="noopener">São Bernardo</a></h3><a class="brand-logo-link" href="https://www.saobernardo.ind.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da São Bernardo"></a><p>Utilidades plásticas para o dia a dia.</p><a class="catalog-link" href="https://drive.google.com/file/d/1Px3jkW7bpCLTIDHYgl-DvLWfRtb6WcD8/view?usp=sharing" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/botafogo.png')"><h3><a class="brand-name-link" href="https://botafogo.ind.br/" target="_blank" rel="noopener">Botafogo</a></h3><a class="brand-logo-link" href="https://botafogo.ind.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Botafogo"></a><p>Soluções para cuidados, limpeza e casa.</p><a class="catalog-link" href="https://drive.google.com/file/d/1XAtDpUJkMx_HtiM9NDVPRjsVt9GHEzy6/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/secalux.svg')"><h3><a class="brand-name-link" href="https://www.secalux.com.br/" target="_blank" rel="noopener">Secalux</a></h3><a class="brand-logo-link" href="https://www.secalux.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Secalux"></a><p>Varais e soluções para lavanderia.</p><a class="catalog-link" href="https://drive.google.com/file/d/1ZqPJjtBQ9Z3lt6KmexxmRDwMmWacUCQa/view?usp=sharing" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/acomix.png')"><h3><a class="brand-name-link" href="https://acomix.net/" target="_blank" rel="noopener">Açomix</a></h3><a class="brand-logo-link" href="https://acomix.net/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Açomix"></a><p>Panelas e utensílios para a cozinha.</p><a class="catalog-link" href="https://drive.google.com/file/d/1rzR8vILepUS9L1l_Rvd15QfnN-kRcK7r/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/powermaid.webp')"><h3><a class="brand-name-link" href="https://powermaid.com.br/" target="_blank" rel="noopener">Camesa — Powermaid</a></h3><a class="brand-logo-link" href="https://powermaid.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Camesa — Powermaid"></a><p>Itens práticos para limpeza doméstica.</p><a class="catalog-link" href="https://drive.google.com/file/d/1Lh4-XFtMZ7JqRdtQdfa512ypPRITH0JT/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/oliveira.png')"><h3><a class="brand-name-link" href="https://oliveiraindustria.com.br/" target="_blank" rel="noopener">Alumínio Oliveira</a></h3><a class="brand-logo-link" href="https://oliveiraindustria.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Alumínio Oliveira"></a><p>Soluções práticas para limpeza e organização.</p><a class="catalog-link" href="https://drive.google.com/file/d/1M_G7mGqHoOXaQf9slImK1rkQxolpNAc/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/taumer.png')"><h3><a class="brand-name-link" href="https://taumer.com.br/" target="_blank" rel="noopener">Taumer</a></h3><a class="brand-logo-link" href="https://taumer.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Taumer"></a><p>Talheres, aramados e utilidades para cozinha e casa.</p><a class="catalog-link" href="https://drive.google.com/file/d/15O_QRSptQmdLo5eHgmsTeuI2TCghFO7b/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/ruvolo.png')"><h3><a class="brand-name-link" href="https://ruvolo.com.br/" target="_blank" rel="noopener">Ruvolo</a></h3><a class="brand-logo-link" href="https://ruvolo.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Ruvolo"></a><p>Itens funcionais para casa e cozinha.</p><a class="catalog-link" href="https://drive.google.com/file/d/1Aftbvdn1fVPkyVjTT5vVfsFY_GsAku0m/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/globimport.png')"><h3><a class="brand-name-link" href="https://globimport.com.br/" target="_blank" rel="noopener">Globimport</a></h3><a class="brand-logo-link" href="https://globimport.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Globimport"></a><p>Produtos para cozinha, mesa e casa.</p><a class="catalog-link" href="https://drive.google.com/file/d/1olk19oEiKNsvJ33RQijtTL1U6R2S95Ge/view?usp=sharing" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/alleanza.svg')"><h3><a class="brand-name-link" href="https://alleanzaceramica.com.br/" target="_blank" rel="noopener">Alleanza</a></h3><a class="brand-logo-link" href="https://alleanzaceramica.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Alleanza"></a><p>Louças e cerâmicas para mesa posta.</p><a class="catalog-link" href="https://alleanzaceramica.com.br/catalogos" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/porcelanas-lu.jpg')"><h3><a class="brand-name-link" href="https://porcelanaslu.com.br/" target="_blank" rel="noopener">Porcelanas Lu</a></h3><a class="brand-logo-link" href="https://porcelanaslu.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Porcelanas Lu"></a><p>Porcelanas e itens para mesa posta.</p><a class="catalog-link" href="https://drive.google.com/file/d/1R52RAAYdpS6HfKTinRsMNbIwbuMZEaiP/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/espelhos-leao.jpg')"><h3><a class="brand-name-link" href="https://espelhosleao.com.br/" target="_blank" rel="noopener">Espelhos Leão</a></h3><a class="brand-logo-link" href="https://espelhosleao.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Espelhos Leão"></a><p>Espelhos e vidros transformados para o lar.</p><a class="catalog-link" href="https://drive.google.com/file/d/1iOr85y1ddaYg9NBRwExL6RPVOudTYqNB/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/dm-toys.png')"><h3><a class="brand-name-link" href="https://dmtoys.com.br/" target="_blank" rel="noopener">DM Brasil</a></h3><a class="brand-logo-link" href="https://dmtoys.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da DM Brasil"></a><p>Brinquedos para diferentes fases da infância e linhas de movimento.</p><a class="catalog-link" href="https://drive.google.com/file/d/1FEIdxW5PQU_2OJm8aKodEJN4OEQGeRsk/view?usp=drive_link" target="_blank" rel="noopener">Catálogo · Toys</a><a class="catalog-link" href="https://drive.google.com/file/d/15p7ReTXVSOia-No9DworuSIoNaVoEO9Y/view?usp=drive_link" target="_blank" rel="noopener">Catálogo · Radical</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/brinquemix.png')"><h3><a class="brand-name-link" href="https://brinquemix.com.br/" target="_blank" rel="noopener">Brinquemix</a></h3><a class="brand-logo-link" href="https://brinquemix.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Brinquemix"></a><p>Brinquedos e itens para brincar.</p><a class="catalog-link" href="https://drive.google.com/file/d/14ysBQH_QLqKz5NWO_UwsHZdlBNBL4I3T/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/bang-toys.png')"><h3><a class="brand-name-link" href="https://www.bangtoys.com.br/" target="_blank" rel="noopener">Bang Toys</a></h3><a class="brand-logo-link" href="https://www.bangtoys.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Bang Toys"></a><p>Veículos elétricos infantis, brinquedos e mobilidade para brincar.</p><a class="catalog-link" href="https://drive.google.com/file/d/1cmwXsFgAU_L9bxK_lQLfZHa1Z3_Gbw_K/view?usp=drive_link" target="_blank" rel="noopener">Catálogo</a></article>
+      <article class="brand-card catalog-visual" style="--catalog-image:url('assets/brands/prozent.jpg')"><h3><a class="brand-name-link" href="https://prozent.com.br/" target="_blank" rel="noopener">Prozent</a></h3><a class="brand-logo-link" href="https://prozent.com.br/" target="_blank" rel="noopener" aria-label="Abrir site oficial da Prozent"></a><p>Indústria parceira representada pela Sollar.</p><span>Catálogo em atualização</span></article>
     </div></section>
   </main>
   <footer><div class="shell"><span>© <span id="year"></span> Sollar Representações</span><a href="https://www.linkedin.com/in/jacqueline-teixeira-ab3a4911/" target="_blank" rel="noopener">LinkedIn da Jacqueline ↗</a><a href="https://linktr.ee/sollar.representacoes" target="_blank" rel="noopener">Linktree oficial ↗</a></div></footer>
