@@ -54,7 +54,6 @@
       gap:12px;
       font-weight:700;
       letter-spacing:.02em;
-      white-space:nowrap;
     }
 
     .brand-logo{
@@ -66,33 +65,19 @@
 
     .navlinks{
       display:flex;
-      align-items:center;
-      gap:28px;
+      gap:22px;
     }
 
     .navlinks a{
       color:#fff;
       text-decoration:none;
-      font-size:.88rem;
+      font-size:.9rem;
       font-weight:600;
-      padding:8px 0;
-      position:relative;
     }
 
-    .navlinks a::after{
-      content:'';
-      position:absolute;
-      left:0;
-      bottom:2px;
-      width:0;
-      height:1px;
-      background:#fff;
-      transition:width .2s ease;
-    }
-
-    .navlinks a:hover::after,
-    .navlinks a:focus-visible::after{
-      width:100%;
+    .navlinks a:hover,
+    .navlinks a[aria-current="page"]{
+      color:var(--ink);
     }
 
     .hero{
@@ -221,18 +206,15 @@
       }
 
       .nav{
-        height:auto;
-        min-height:0;
-        padding:14px 0 10px;
-        display:flex;
-        flex-wrap:wrap;
-        gap:12px;
+        height:76px;
+        gap:10px;
       }
 
       .brand{
         gap:9px;
         font-size:.78rem;
         line-height:1.2;
+        flex-shrink:0;
       }
 
       .brand-logo{
@@ -241,28 +223,27 @@
       }
 
       .navlinks{
-        width:100%;
         display:flex;
-        justify-content:space-between;
-        align-items:center;
-        gap:14px;
-        padding-top:10px;
-        margin-left:0;
-        border-top:1px solid rgba(255,255,255,.28);
+        gap:0;
+        margin-left:auto;
       }
 
       .navlinks a{
-        display:block;
-        color:#fff;
-        font-size:.70rem;
-        line-height:1.2;
-        padding:5px 0 6px;
-        text-align:center;
-        white-space:nowrap;
+        display:none;
       }
 
-      .navlinks a::after{
-        bottom:0;
+      .navlinks a[aria-current="page"]{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        color:#fff;
+        border:1px solid rgba(255,255,255,.7);
+        border-radius:4px;
+        padding:9px 11px;
+        font-size:.69rem;
+        line-height:1.15;
+        text-align:center;
+        white-space:nowrap;
       }
 
       .grid{
@@ -329,6 +310,10 @@
         padding-right:22px;
       }
 
+      .nav{
+        height:72px;
+      }
+
       .brand{
         font-size:.73rem;
       }
@@ -338,12 +323,9 @@
         height:39px;
       }
 
-      .navlinks{
-        gap:10px;
-      }
-
-      .navlinks a{
+      .navlinks a[aria-current="page"]{
         font-size:.64rem;
+        padding:8px;
       }
 
       .hero{
@@ -370,7 +352,7 @@
     <div class="shell nav">
       <a class="brand" href="index.html">
         <img class="brand-logo" src="assets/sollar-home.svg?v=3" alt="Ícone de casinha da Sollar">
-        <span>SOLLAR REPRESENTAÇÕES</span>
+        <span>SOLLAR<br>REPRESENTAÇÕES</span>
       </a>
 
       <nav class="navlinks" aria-label="Navegação">
@@ -421,14 +403,11 @@
 
   <footer>
     <div class="shell">
-      © <span id="year"></span> Sollar Representações ·
+      © 2026 Sollar Representações ·
       <a href="https://www.linkedin.com/in/jacqueline-teixeira-ab3a4911/" target="_blank" rel="noopener">LinkedIn da Jacqueline ↗</a> ·
       <a href="https://linktr.ee/sollar.representacoes" target="_blank" rel="noopener">Linktree oficial ↗</a>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear()
-  </script>
 </body>
 </html>
