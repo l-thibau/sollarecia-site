@@ -193,6 +193,87 @@
 
     .signature a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
 
+    .sun-burst{
+      position:fixed;
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      pointer-events:none;
+      z-index:9999;
+      transform:translate(-50%,-50%) scale(.55);
+      opacity:0;
+      background:
+        radial-gradient(circle at center,
+          rgba(255,255,247,.98) 0%,
+          rgba(255,244,199,.96) 18%,
+          rgba(239,198,92,.78) 38%,
+          rgba(217,168,71,.34) 58%,
+          rgba(217,168,71,0) 76%),
+        repeating-conic-gradient(
+          from -3deg,
+          rgba(255,245,210,.58) 0deg 4deg,
+          rgba(217,168,71,.08) 4deg 9deg,
+          transparent 9deg 16deg
+        );
+      filter:saturate(1.05);
+      animation:sunBurst .62s cubic-bezier(.2,.72,.2,1) forwards;
+    }
+
+    .sun-burst::before{
+      content:'';
+      position:absolute;
+      inset:12px;
+      border-radius:50%;
+      background:
+        radial-gradient(circle,
+          rgba(255,255,250,.95) 0%,
+          rgba(255,238,174,.86) 58%,
+          rgba(222,173,66,.48) 100%);
+      border:1px solid rgba(122,88,20,.16);
+      box-shadow:
+        0 0 8px rgba(255,228,144,.28),
+        inset 0 0 0 1px rgba(255,255,255,.18);
+    }
+
+    .sun-burst::after{
+      content:'';
+      position:absolute;
+      inset:-5px;
+      border-radius:50%;
+      border:1px solid rgba(217,168,71,.34);
+      opacity:.68;
+      animation:sunHalo .62s ease-out forwards;
+    }
+
+    @keyframes sunBurst{
+      0%{
+        opacity:0;
+        transform:translate(-50%,-50%) scale(.55) rotate(-5deg);
+      }
+      16%{
+        opacity:.98;
+      }
+      100%{
+        opacity:0;
+        transform:translate(-50%,-50%) scale(2.25) rotate(14deg);
+      }
+    }
+
+    @keyframes sunHalo{
+      0%{
+        opacity:.68;
+        transform:scale(.78);
+      }
+      100%{
+        opacity:0;
+        transform:scale(1.35);
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      .sun-burst{display:none}
+    }
+
     .cta{
       background:var(--ink);
       color:#fff;
@@ -411,7 +492,7 @@
             <p>A <strong>SOLLAR</strong> é a realização do meu sonho de unir minha trajetória profissional à minha paixão por criar espaços inspiradores, representando diversas indústrias em meu portfólio.</p>
 
             <div class="signature">
-              <a href="https://www.linkedin.com/in/jacqueline-teixeira-ab3a4911/" target="_blank" rel="noopener" aria-label="Abrir LinkedIn de Jacqueline Teixeira">
+              <a class="sun-trigger" href="https://www.linkedin.com/in/jacqueline-teixeira-ab3a4911/" target="_blank" rel="noopener" aria-label="Abrir LinkedIn de Jacqueline Teixeira">
                 <span>Jacqueline Teixeira</span>
                 <span class="signature-role">Fundadora da Sollar Representações</span>
               </a>
@@ -441,7 +522,35 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent=new Date().getFullYear()
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    document.querySelectorAll('.sun-trigger').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) return;
+
+        event.preventDefault();
+
+        const burst = document.createElement('span');
+        burst.className = 'sun-burst';
+        burst.style.left = `${event.clientX}px`;
+        burst.style.top = `${event.clientY}px`;
+        document.body.appendChild(burst);
+
+        const url = link.href;
+        const target = link.target;
+
+        setTimeout(() => burst.remove(), 700);
+
+        setTimeout(() => {
+          if (target === '_blank') {
+            window.open(url, '_blank', 'noopener');
+          } else {
+            window.location.href = url;
+          }
+        }, 420);
+      });
+    });
   </script>
 </body>
 </html>
