@@ -26,3 +26,7 @@ Estes arquivos são usados apenas nos cards de catálogo da Sollar Representaç�
 | DM Toys | `dm-toys.png` | https://dmtoys.com.br/wp-content/uploads/2017/06/logo-2.png |
 | DM Radical | `dm-radical.png` | https://dmtoys.com.br/wp-content/uploads/2017/08/DMR.png |
 | Brinquemix | `brinquemix.png` | https://brinquemix.com.br/assets/img/logo1.png |
+| Bang Toys | `bang-toys.png` | Logo fornecida pela Sollar; catálogo oficial no Drive. |
+| Porcelanas Lu | `porcelanas-lu.jpg` | Logo fornecida pela Sollar; site oficial: https://porcelanaslu.com.br/ |
+| Espelhos Leão | `espelhos-leao.jpg` | Logo fornecida pela Sollar; site oficial: https://espelhosleao.com.br/ |
+| Prozent | `prozent.jpg` | Logo fornecida pela Sollar; site oficial: https://prozent.com.br/ |
