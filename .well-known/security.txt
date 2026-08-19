@@ -1,0 +1,4 @@
+Contact: mailto:comercial@sollarecia.com.br
+Expires: 2027-08-19T00:00:00.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://sollarecia.com.br/.well-known/security.txt
