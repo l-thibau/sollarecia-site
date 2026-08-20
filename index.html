@@ -7,7 +7,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://sollarecia.com.br/">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'none'; frame-src 'none'; upgrade-insecure-requests">
   <title>Sollar</title>
   <link rel="icon" href="assets/Casinha.png?v=4" type="image/png">
   <style>
@@ -429,37 +429,6 @@
     <section class="contact" id="contato"><div class="shell contact-grid"><div><div class="section-kicker">Vamos conversar</div><h2>Encontre a linha certa para sua loja.</h2><p>Fale com a Sollar para consultar condições, disponibilidade e orientações comerciais das marcas representadas.</p></div><div class="contact-box"><a class="sun-trigger" href="https://wa.me/5571993105333" target="_blank" rel="noopener"><small>WhatsApp comercial</small>(71) 99310-5333</a><a class="sun-trigger" href="mailto:comercial@sollarecia.com.br"><small>E-mail</small>comercial@sollarecia.com.br</a><a class="sun-trigger" href="https://www.instagram.com/sollar.representacoes/" target="_blank" rel="noopener"><small>Instagram</small>@sollar.representacoes</a></div></div></section>
   </main>
   <footer><div class="shell"><span>© <span id="year"></span> Sollar Representações</span><a href="https://linktr.ee/sollar.representacoes" target="_blank" rel="noopener">Linktree oficial ↗</a></div></footer>
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-
-    document.querySelectorAll('.sun-button, .sun-trigger').forEach((button) => {
-      button.addEventListener('click', (event) => {
-        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const url = button.href;
-        const target = button.target;
-
-        if (reduceMotion) return;
-
-        event.preventDefault();
-
-        const burst = document.createElement('span');
-        burst.className = 'sun-burst';
-        burst.style.left = `${event.clientX}px`;
-        burst.style.top = `${event.clientY}px`;
-        document.body.appendChild(burst);
-
-        setTimeout(() => burst.remove(), 700);
-
-        /* Pequeno atraso para a luz aparecer antes de abrir o WhatsApp */
-        setTimeout(() => {
-          if (target === '_blank') {
-            window.open(url, '_blank', 'noopener');
-          } else {
-            window.location.href = url;
-          }
-        }, 420);
-      });
-    });
-  </script>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
