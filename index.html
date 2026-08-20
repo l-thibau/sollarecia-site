@@ -209,7 +209,7 @@
 .brand-card.catalog-visual p,
 .brand-card.catalog-visual a{
   max-width:64%;
-}.brand-card a:after{content:' ↗';color:var(--sun)}.contact{background:#e7efe7;padding:86px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.contact p{font-size:1.08rem;color:#4e5d55;max-width:540px}.contact-box{background:var(--paper);padding:30px;box-shadow:var(--shadow);border-top:5px solid var(--sun)}.contact-box a{color:var(--ink);text-decoration:none;display:block;font-size:1.04rem;font-weight:700;padding:13px 0;border-bottom:1px solid var(--line)}.contact-box a:last-child{border:0}.contact-box small{display:block;color:var(--muted);font-size:.78rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}footer{background:#173a32;color:#d6e1dc;padding:25px 0;font-size:.84rem}footer .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:var(--sun);text-decoration:none}
+}.brand-card a:after{content:' ↗';color:var(--sun)}.contact{background:#e7efe7;padding:86px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.contact p{font-size:1.08rem;color:#4e5d55;max-width:540px}.contact-box{background:var(--paper);padding:30px;box-shadow:var(--shadow);border-top:5px solid var(--sun)}.contact-box a{color:var(--ink);text-decoration:none;display:block;font-size:1.04rem;font-weight:700;padding:13px 0;border-bottom:1px solid var(--line);transition:color .2s ease}.contact-box a:last-child{border:0}.contact-box small{display:block;color:var(--muted);font-size:.78rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px;transition:color .2s ease}.contact-box a:hover,.contact-box a:focus-visible,.contact-box a:hover small,.contact-box a:focus-visible small{color:var(--pine)}.contact-box a:focus-visible{outline:2px solid var(--pine);outline-offset:4px}footer{background:#173a32;color:#d6e1dc;padding:25px 0;font-size:.84rem}footer .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:var(--sun);text-decoration:none}
 @media(max-width:760px){
   .shell{
     padding-left:24px;
@@ -426,13 +426,13 @@
     da rotina de seus clientes.
   </p>
 </section>
-    <section class="contact" id="contato"><div class="shell contact-grid"><div><div class="section-kicker">Vamos conversar</div><h2>Encontre a linha certa para sua loja.</h2><p>Fale com a Sollar para consultar condições, disponibilidade e orientações comerciais das marcas representadas.</p></div><div class="contact-box"><a href="https://wa.me/5571993105333" target="_blank" rel="noopener"><small>WhatsApp comercial</small>(71) 99310-5333</a><a href="mailto:comercial@sollarecia.com.br"><small>E-mail</small>comercial@sollarecia.com.br</a><a href="https://www.instagram.com/sollar.representacoes/" target="_blank" rel="noopener"><small>Instagram</small>@sollar.representacoes</a></div></div></section>
+    <section class="contact" id="contato"><div class="shell contact-grid"><div><div class="section-kicker">Vamos conversar</div><h2>Encontre a linha certa para sua loja.</h2><p>Fale com a Sollar para consultar condições, disponibilidade e orientações comerciais das marcas representadas.</p></div><div class="contact-box"><a class="sun-trigger" href="https://wa.me/5571993105333" target="_blank" rel="noopener"><small>WhatsApp comercial</small>(71) 99310-5333</a><a class="sun-trigger" href="mailto:comercial@sollarecia.com.br"><small>E-mail</small>comercial@sollarecia.com.br</a><a class="sun-trigger" href="https://www.instagram.com/sollar.representacoes/" target="_blank" rel="noopener"><small>Instagram</small>@sollar.representacoes</a></div></div></section>
   </main>
   <footer><div class="shell"><span>© <span id="year"></span> Sollar Representações</span><a href="https://linktr.ee/sollar.representacoes" target="_blank" rel="noopener">Linktree oficial ↗</a></div></footer>
   <script>
     document.getElementById('year').textContent=new Date().getFullYear();
 
-    document.querySelectorAll('.sun-button').forEach((button) => {
+    document.querySelectorAll('.sun-button, .sun-trigger').forEach((button) => {
       button.addEventListener('click', (event) => {
         const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const url = button.href;
